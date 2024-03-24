@@ -12,7 +12,8 @@ if not os.path.exists(os.path.join(os.path.dirname(__file__), 'Setup', '.t')):
         case 'Windows':
             print(f" [i] Detected system: {system()}")
             powershellpath = r"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
-            powershellcmd = f"Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Toxikuu/Samael-T/main/Setup/setup.py -OutFile '{os.path.join(os.path.dirname(__file__), Setup, setup.py)}'"
+            powershellcmd = f"Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Toxikuu/Samael-T/main/Setup/setup.py' -OutFile '{os.path.join(os.path.dirname(__file__), Setup, setup.py)}'"
+            os.system(f'{powershellpath} {powershellcmd}')
 
         case 'Linux':
             print(f" [i] Detected system: {system()}")
