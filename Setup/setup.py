@@ -88,7 +88,8 @@ for repopath in repopaths:
         case 'Windows':
             powershellpath = r"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
             powershellcmd = f"Invoke-WebRequest -Uri '{github_url}' -OutFile '{os.path.join(local_dir, os.path.basename(repopath))}'"
-
+            os.system(f'{powershellpath} {powershellcmd}')
+        
         case 'Linux':
                 os.system(f'curl -o {os.path.join(local_dir, os.path.basename(repopath))} -L {github_url}')
 
