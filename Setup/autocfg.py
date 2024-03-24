@@ -50,23 +50,11 @@ match mcclient:
 with open(os.path.join(ConfigsDir, 'Config.toml'), 'w') as f:
     toml.dump(t, f)
 
-# Add Samael to path
 match system():
     case 'Windows':
-        current_path = os.getenv('PATH')
-        new_path = f'{current_path};{SamaelDir}'
-        os.environ['PATH'] = new_path
-        
-        with open(os.path.join(SamaelDir, 'samael.bat'), 'x') as f:
-            f.write(f'''
-            @echo off
-            {os.path.join(SamaelDir, "venv", "bin", "python")} {os.path.join(SamaelDir, "Samael.py")}
-            ''')
-            os.system('refreshenv')
-            print(" [*] You may now launch Samael by typing 'samael' in your terminal.")
+            print(" [*] You may now launch Samael with '{SamaelDir}/venv/Scripts/python.exe {SamaelDir}/Samael.py' using your terminal")
     
     case 'Linux':
-            print(f" [*] You may now launch Samael with '{SamaelDir}/venv/bin/python {SamaelDir}/Samael.py'")
-            print(" [*] Feel free to make an alias or function to shorten this in your shell.")
-
-input(' [-] Press enter to exit...')
+            print(f" [*] You may now launch Samael with '{SamaelDir}/venv/bin/python {SamaelDir}/Samael.py' using your terminal")
+        
+print(" [*] Feel free to make an alias or function to shorten this in your shell.")
