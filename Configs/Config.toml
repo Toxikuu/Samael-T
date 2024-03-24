@@ -1,0 +1,45 @@
+[apikey]
+apikey = "" 
+polsu_apikey = "" 
+
+[user]
+username = ""
+nick = ""
+
+[dev]
+dev = false 
+crash = false 
+
+[paths]
+chat = "" 
+
+[safenicks]
+safenicks = [ "examplenick1", "examplenick2", "examplenick3",]
+
+[options]
+rounding_precision = 4
+show_own_stats = true
+clear = true
+christian_mode = true
+show_safe = false
+show_risky = true
+show_danger = true
+show_dodge = true
+show_fuck = true
+show_verdict_score = true
+
+[autolist]
+autosafelist_win_count = 2
+autoblacklist_loss_count = 1
+
+[delimiter]
+delimiter_type = 0
+
+[nameflags]
+nameflags = [ "pantie", "sedge", "bloje",]
+
+[ingame]
+autododge = false
+min_verdict_score = 15
+autorq = false
+show_verdict_message = true

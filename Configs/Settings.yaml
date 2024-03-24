@@ -1,0 +1,659 @@
+Thresholds:
+  NWL:
+    Safe: [5, 100]
+    Risky: [100, 200]
+    Danger: [200, 300]
+    Dodge: [300, 350]
+    Fuck: [350, null]
+  
+  SW star:
+    Safe: [2, 10]
+    Risky: [0, 15]
+    Danger: [15, 20]
+    Dodge: [20, 30]
+    Fuck: [30, null]
+
+  SW kills:
+    Safe: [5, 500]
+    Risky: [0, 2500]
+    Danger: [2500, 15000]
+    Dodge: [15000, 30000]
+    Fuck: [30000, null]
+
+  SW deaths:
+    Safe: [10, 1500]
+    Risky: [0, null]
+
+  SW wins:
+    Safe: [0, 50]
+    Risky: [50, 1000]
+    Danger: [1000, 5000]
+    Dodge: [5000, 10000]
+    Fuck: [10000, null]
+
+  SW losses:
+    Safe: [3, 1500]
+    Risky: [0, null]
+
+  SW wlr:
+    Safe: [0, 0.2]
+    Risky: [0.2, 0.6]
+    Danger: [0.6, 1.2]
+    Dodge: [1.2, 1.6]
+    Fuck: [1.6, null]
+
+  SW kdr:
+    Safe: [0, 1]
+    Risky: [1, 2]
+    Danger: [2, 3]
+    Dodge: [3, 4]
+    Fuck: [4, null]
+
+  BW star:
+    Safe: [1, 250]
+    Risky: [250, 500]
+    Danger: [500, 750]
+    Dodge: [750, 1000]
+    Fuck: [1000, null]
+
+  BW fks:
+    Safe: [10, 3000]
+    Risky: [2, 12000]
+    Danger: [0, 25000]
+    Dodge: [25000, 40000]
+    Fuck: [40000, null]
+
+  BW fds:
+    Safe: [100, null]
+    Risky: [10, 100]
+    Danger: [0, 10]
+
+  Beds lost:
+    Safe: [50, null]
+    Risky: [3, 50]
+    Danger: [0, 3]
+
+  Beds broken:
+    Safe: [4, 1000]
+    Risky: [2, 5000]
+    Danger: [5000, 10000]
+    Dodge: [10000, 15000]
+    Fuck: [15000, null]
+
+  BW kills:
+    Safe: [50, 2500]
+    Risky: [0, 15000]
+    Danger: [15000, 35000]
+    Dodge: [35000, 50000]
+    Fuck: [50000, null]
+
+  BW deaths:
+    Safe: [100, null]
+    Risky: [10, 100]
+    Danger: [0, 10]
+
+  BW fkdr:
+    Safe: [0.01, 1.5]
+    Risky: [1.5, 2.5]
+    Danger: [2.5, 3.5]
+    Dodge: [3.5, 4.5]
+    Fuck: [4.5, null]
+
+  BW bblr:
+    Safe: [0.01, 1.2]
+    Risky: [1.2, 1.8]
+    Danger: [1.8, 2.4]
+    Dodge: [2.4, 3.2]
+    Fuck: [3.2, null]
+
+  BW kdr:
+    Safe: [0.01, 0.8]
+    Risky: [0.8, 1.4]
+    Danger: [1.4, 2]
+    Dodge: [2, 3]
+    Fuck: [3, null]
+
+  BW fksperstar:
+    Safe: [0, 25]
+    Risky: [25, 40]
+    Danger: [40, 50]
+    Dodge: [50, 60]
+    Fuck: [60, null]
+
+  Sumo wins:
+    Safe: [0, 2000]
+    Risky: [2000, 10000]
+    Danger: [10000, 25000]
+    Dodge: [25000, 50000]
+    Fuck: [50000, null]
+
+  Sumo losses:
+    Safe: [1, 2000]
+    Risky: [0, 20000]
+    Danger: [20000, null]
+
+  Sumo wlr:
+    Safe: [0, 1.1]
+    Risky: [1.1, 1.8]
+    Danger: [1.8, 2.6]
+    Dodge: [2.6, 3.4]
+    Fuck: [3.4, null]
+
+  Sumo bws:
+    Safe: [1, 10]
+    Risky: [0, 25]
+    Danger: [25, 75]
+    Dodge: [75, 125]
+    Fuck: [125, null]
+
+  Sumo cws:
+    Safe: [0, 5]
+    Risky: [5, 10]
+    Danger: [10, 25]
+    Dodge: [25, 40]
+    Fuck: [40, null]
+
+  Bridge wins:
+    Safe: [0, 1000]
+    Risky: [1000, 2500]
+    Danger: [2500, 5000]
+    Dodge: [5000, 7500]
+    Fuck: [7500, null]
+
+  Bridge losses:
+    Safe: [3, null]
+    Risky: [1, 3]
+
+  Bridge wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 4.8]
+    Fuck: [4.8, null]
+
+  Classic wins:
+    Safe: [0, 1000]
+    Risky: [1000, 2000]
+    Danger: [2000, 5000]
+    Dodge: [5000, 15000]
+    Fuck: [15000, null]
+
+  Classic losses:
+    Safe: [3, null]
+    Risky: [1, 3]
+
+  Classic wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 4.8]
+    Fuck: [4.8, null]
+
+  Parkour wins:
+    Safe: [0, 25]
+    Risky: [25, 50]
+    Danger: [50, 100]
+    Dodge: [100, 500]
+    Fuck: [500, null]
+
+  Parkour losses:
+    Safe: [1, null]
+    Risky: [0, 1]
+
+  Parkour wlr:
+    Safe: [0, 0.5]
+    Risky: [0.5, 1]
+    Danger: [1, 2]
+    Dodge: [2, 4]
+    Fuck: [4, null]
+
+  TNT wins:
+    Safe: [0, 25]
+    Risky: [25, 100]
+    Danger: [100, 500]
+    Dodge: [500, 2500]
+    Fuck: [2500, null]
+
+  TNT losses:
+    Safe: [0, null]
+
+  TNT wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 4.8]
+    Fuck: [4.8, null]
+
+  Skywars wins:
+    Safe: [0, 1000]
+    Risky: [1000, 2000]
+    Danger: [2000, 5000]
+    Dodge: [5000, 10000]
+    Fuck: [10000, null]
+
+  Skywars losses:
+    Safe: [1, null]
+    Risky: [0, 1]
+
+  Skywars wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 4.8]
+    Fuck: [4.8, null]
+
+  Bow wins:
+    Safe: [0, 50]
+    Risky: [50, 100]
+    Danger: [100, 250]
+    Dodge: [250, 500]
+    Fuck: [500, null]
+
+  Bow losses:
+    Safe: [0, null]
+
+  Bow wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 3.6]
+    Fuck: [3.6, null]
+
+  Boxing wins:
+    Safe: [0, 50]
+    Risky: [50, 250]
+    Danger: [250, 500]
+    Dodge: [500, 2500]
+    Fuck: [2500, null]
+
+  Boxing losses:
+    Safe: [0, null]
+
+  Boxing wlr:
+    Safe: [0, 0.8]
+    Risky: [0.8, 1.6]
+    Danger: [1.6, 2.4]
+    Dodge: [2.4, 4.8]
+    Fuck: [4.8, null]
+
+  Combo wins:
+    Safe: [0, 50]
+    Risky: [50, 250]
+    Danger: [250, 1000]
+    Dodge: [1000, 2500]
+    Fuck: [2500, null]
+
+  Combo losses:
+    Safe: [0, null]
+
+  Combo wlr:
+    Safe: [0, 1.2]
+    Risky: [1.2, 2.4]
+    Danger: [2.4, 3.6]
+    Dodge: [3.6, 4.8]
+    Fuck: [4.8, null]
+
+  UHCD wins:
+    Safe: [2, 500]
+    Risky: [0, 2500]
+    Danger: [2500, 5000]
+    Dodge: [5000, 10000]
+    Fuck: [10000, null]
+
+  UHCD losses:
+    Safe: [5, 1000]
+    Risky: [0, 2500]
+    Danger: [2500, null]
+
+  UHCD wlr:
+    Safe: [0.01, 0.8]
+    Risky: [0, 1.5]
+    Danger: [1.5, 2]
+    Dodge: [2, 4]
+    Fuck: [4, null]
+
+  UHC kills:
+    Safe: [0, 25]
+    Risky: [25, 250]
+    Danger: [250, 1500]
+    Dodge: [1500, 3000]
+    Fuck: [3000, null]
+
+  UHC deaths:
+    Safe: [0, 250]
+    Risky: [250, 1000]
+    Danger: [1000, null]
+
+  UHC kdr:
+    Safe: [0, 0.5]
+    Risky: [0.5, 1.5]
+    Danger: [1.5, 2.5]
+    Dodge: [2.5, 4]
+    Fuck: [4, null]
+
+  UHC wins:
+    Safe: [0, 2]
+    Risky: [2, 10]
+    Danger: [10, 50]
+    Dodge: [50, 100]
+    Fuck: [100, null]
+
+  UHC games:
+    Safe: [0, null]
+
+  UHC winrate:
+    Safe: [0, 0.05]
+    Risky: [0.05, 0.1]
+    Danger: [0.1, 0.2]
+    Dodge: [0.2, 0.3]
+    Fuck: [0.3, null]
+
+  Duels wlr:
+    Safe: [0.01, 1.5]
+    Risky: [1.5, 2.5]
+    Danger: [2.5, 5]
+    Dodge: [5, 7.5]
+    Fuck: [7.5, null]
+
+  Duels wins:
+    Safe: [10, 10000]
+    Risky: [10000, 20000]
+    Danger: [20000, 50000]
+    Dodge: [50000, 100000]
+    Fuck: [100000, null]
+
+  Duels losses:
+    Safe: [10, null]
+    Risky: [5, 10]
+    Danger: [1, 5]
+    Dodge: [0, 1]
+
+  Duels bws:
+    Safe: [1, 25]
+    Risky: [25, 50]
+    Danger: [50, 150]
+    Dodge: [150, 250]
+    Fuck: [250, null]
+
+  Duels cws:
+    Safe: [0, 5]
+    Risky: [5, 15]
+    Danger: [15, 35]
+    Dodge: [35, 50]
+    Fuck: [50, null]
+
+  Melee Acc:
+    Safe: [0.01, 40]
+    Risky: [40, 55]
+    Danger: [55, 65]
+    Dodge: [65, 75]
+    Fuck: [75, null]
+
+  Combo Melee Acc:
+    Safe: [0, 75]
+    Risky: [75, 100]
+    Danger: [100, 115]
+    Dodge: [115, 130]
+    Fuck: [130, null]
+
+  NDB wlr:
+    Safe: [0, 1]
+    Risky: [1, 2]
+    Danger: [2, 4]
+    Dodge: [4, 6]
+    Fuck: [6, null]
+
+  NDB wins:
+    Safe: [0, 10]
+    Risky: [10, 500]
+    Danger: [500, 2500]
+    Dodge: [2500, 5000]
+    Fuck: [5000, null]
+
+  NDB losses:
+    Safe: [0, null]
+
+  OP wlr:
+    Safe: [0.01, 1]
+    Risky: [0, 2]
+    Danger: [2, 4]
+    Dodge: [4, 6]
+    Fuck: [6, null]
+
+  OP wins:
+    Safe: [2, 250]
+    Risky: [0, 2500]
+    Danger: [2500, 7500]
+    Dodge: [7500, 15000]
+    Fuck: [15000, null]
+
+  OP losses:
+    Safe: [2, null]
+    Risky: [0, 2]
+
+  MWD wlr:
+    Safe: [0, 1]
+    Risky: [1, 2]
+    Danger: [2, 4]
+    Dodge: [4, 6]
+    Fuck: [6, null]
+
+  MWD wins:
+    Safe: [0, 10]
+    Risky: [10, 500]
+    Danger: [500, 2500]
+    Dodge: [2500, 5000]
+    Fuck: [5000, null]
+
+  MWD losses:
+    Safe: [0, null]
+
+  Blitzd wlr: 
+    Safe: [0, 1]
+    Risky: [1, 2]
+    Danger: [2, 4]
+    Dodge: [4, 6]
+    Fuck: [6, null]
+
+  Blitzd wins:
+    Safe: [0, 250]
+    Risky: [250, 2500]
+    Danger: [2500, 7500]
+    Dodge: [7500, 15000]
+    Fuck: [15000, null]
+
+  Blitzd losses:
+    Safe: [0, null]
+
+  SG wins:
+    Safe: [0, 5]
+    Risky: [5, 15]
+    Danger: [15, 50]
+    Dodge: [50, 100]
+    Fuck: [100, null]
+
+  SG losses:
+    Safe: [1, 1000]
+    Risky: [0, 1]
+
+  SG winrate:
+    Safe: [0, 0.1]
+    Risky: [0.1, 0.2]
+    Danger: [0.2, 0.3]
+    Dodge: [0.3, 0.4]
+    Fuck: [0.4, null]
+  
+  SG kills:
+    Safe: [0, 25]
+    Risky: [25, 250]
+    Danger: [250, 1000]
+    Dodge: [1000, 2500]
+    Fuck: [2500, null]
+
+  SG deaths:
+    Safe: [1, 1000]
+    Risky: [0, 1]
+  
+  SG kdr:
+    Safe: [0, 0.6]
+    Risky: [0.6, 1.2]
+    Danger: [1.2, 2.4]
+    Dodge: [2.4, 3.6]
+    Fuck: [3.6, null]
+
+  Pit kills:
+    Safe: [0, 100]
+    Risky: [100, 400]
+    Danger: [400, 1600]
+    Dodge: [1600, 3200]
+    Fuck: [3200, null]
+
+  Pit deaths:
+    Safe: [0, null]
+
+  Pit kdr:
+    Safe: [0, 0.6]
+    Risky: [0.6, 1.2]
+    Danger: [1.2, 2.4]
+    Dodge: [2.4, 3.6]
+    Fuck: [3.6, null]
+
+  Pit max streak:
+    Safe: [0, 5]
+    Risky: [5, 15]
+    Danger: [15, 35]
+    Dodge: [35, 50]
+    Fuck: [50, null]
+
+  WW wins:
+    Safe: [0, 50]
+    Risky: [50, 250]
+    Danger: [250, 1000]
+    Dodge: [1000, 2500]
+    Fuck: [2500, null]
+
+  WW games:
+    Safe: [0, null]
+
+  WW kills:
+    Safe: [0, 250]
+    Risky: [250, 1000]
+    Danger: [1000, 2500]
+    Dodge: [2500, 5000]
+    Fuck: [5000, null]
+
+  WW deaths:
+    Safe: [0, null]
+
+  WW winrate:
+    Safe: [0, 0.4]
+    Risky: [0.4, 0.6]
+    Danger: [0.6, 0.75]
+    Dodge: [0.75, 0.9]
+    Fuck: [0.9, null]
+
+  WW kdr:
+    Safe: [0, 0.6]
+    Risky: [0.6, 1.2]
+    Danger: [1.2, 2.4]
+    Dodge: [2.4, 3.6]
+    Fuck: [3.6, null]
+
+Active:
+  NWL: True
+  SW star: True
+  SW kills: True
+  SW deaths: True
+  SW wins: True
+  SW losses: True
+  SW wlr: True
+  SW kdr: True
+  BW star: True
+  BW fks: True
+  BW fds: True
+  BW fkdr: True
+  BW fksperstar: True
+  Beds broken: True
+  Beds lost: True
+  BW bblr: True
+  BW kills: True
+  BW deaths: True
+  BW kdr: True
+  Duels wins: True
+  Duels losses: True
+  Duels wlr: True
+  Duels bws: True
+  Duels cws: True
+  UHCD wins: True
+  UHCD losses: True
+  UHCD wlr: True
+  Sumo wins: True
+  Sumo losses: True
+  Sumo wlr: True
+  Sumo bws: True
+  Sumo cws: True
+  Bridge wins: True
+  Bridge losses: True
+  Bridge wlr: True
+  Classic wins: True
+  Classic losses: True
+  Classic wlr: True
+  OP wins: True
+  OP losses: True
+  OP wlr: True
+  Parkour wins: True
+  Parkour losses: True
+  Parkour wlr: True
+  TNT wins: True
+  TNT losses: True
+  TNT wlr: True
+  Skywars wins: True
+  Skywars losses: True
+  Skywars wlr: True
+  Blitzd wins: True
+  Blitzd losses: True
+  Blitzd wlr: True
+  Bow wins: True
+  Bow losses: True
+  Bow wlr: True
+  Boxing wins: True
+  Boxing losses: True
+  Boxing wlr: True
+  NDB wins: True
+  NDB losses: True
+  NDB wlr: True
+  Combo wins: True
+  Combo losses: True
+  Combo wlr: true
+  MWD wins: True
+  MWD losses: True
+  MWD wlr: True
+  UHC kills: True
+  UHC deaths: True
+  UHC kdr: True
+  UHC wins: True
+  SG wins: True
+  SG losses: True
+  SG wlr: True
+  SG kills: True
+  SG deaths: True
+  SG kdr: True
+  Pit kills: True
+  Pit deaths: True
+  Pit kdr: True
+  Pit max streak: True
+  WW wins: True
+  WW games: True
+  WW winrate: True
+  WW kills: True
+  WW deaths: True
+  WW kdr: True
+  Melee Acc: True
+
+Verdicts:
+  You're straight chilling af: [null, 4]
+  Prolly stay: [4, 8]
+  Sorta scary: [8, 14]
+  Dodge: [14, 25]
+  DODGE NOW: [25, 40]
+  FUCK!!: [40, null]
