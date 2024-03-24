@@ -52,7 +52,7 @@ with open(os.path.join(ConfigsDir, 'Config.toml'), 'w') as f:
 
 match system():
     case 'Windows':
-            print(" [*] You may now launch Samael with '{SamaelDir}/venv/Scripts/python.exe {SamaelDir}/Samael.py' using your terminal")
+            print(f" [*] You may now launch Samael with '{SamaelDir}/venv/Scripts/python.exe {SamaelDir}/Samael.py' using your terminal")
     
     case 'Linux':
             print(f" [*] You may now launch Samael with '{SamaelDir}/venv/bin/python {SamaelDir}/Samael.py' using your terminal")
