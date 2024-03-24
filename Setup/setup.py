@@ -24,9 +24,15 @@ print(f" [i] Creating venv...")
 os.system(f"python -m venv {os.path.join(SamaelDir, 'venv')}")
 print(f" [i] Created venv successfully")
 
-venvbin = os.path.join(SamaelDir, 'venv', 'bin')
-venvpip = os.path.join(venvbin, 'pip')
-venvpython = os.path.join(venvbin, 'python')
+if system() == 'Linux':
+    venvbin = os.path.join(SamaelDir, 'venv', 'bin')
+    venvpip = os.path.join(venvbin, 'pip')
+    venvpython = os.path.join(venvbin, 'python')
+elif system() == 'Windows':
+    venvbin = os.path.join(SamaelDir, 'venv', 'Scripts')
+    venvpip = os.path.join(venvbin, 'pip.exe')
+    venvpython = os.path.join(venvbin, 'python.exe')
+
 print(f" [i] Established venv/bin/ paths")
 
 # Install python modules to venv
