@@ -92,7 +92,7 @@ for repopath in repopaths:
         case 'Linux':
                 os.system(f'curl -o {os.path.join(local_dir, os.path.basename(repopath))} -L {github_url}')
 
-autocfgcmd = f'{os.path.join(SamaelDir, "venv", "bin", "python")} {os.path.join(SamaelDir, "Setup", "autocfg.py")}'
+autocfgcmd = f'{venvpython} {os.path.join(SamaelDir, "Setup", "autocfg.py")}'
 print(autocfgcmd)
 os.system(autocfgcmd)
 
